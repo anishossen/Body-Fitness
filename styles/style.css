@@ -1,0 +1,198 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+}
+
+/* shared styles  */
+.display-flex{
+    display: flex;
+}
+.body{
+    width: 85%;
+    margin: 0 auto;
+}
+/* Header section styles  */
+
+header{
+    background: linear-gradient(180deg, rgba(17,17,17), rgba(119, 119, 119, 0) 100%);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.nav-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+.nav-menu{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 50px 5px 2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.bars-icon{
+    display: none;
+}
+.home{
+    background-color: brown;
+    padding: 8px 20px;
+    margin-left: 0px;
+    border-radius: 3rem;
+}
+
+/* Banner section of header part  */
+
+.header-banner{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12rem;
+}
+
+.header-title{
+    width: 33rem;
+    height: auto;
+    font-size: 4.9rem;
+    font-weight: 900;
+    color: white;
+    margin: 1.7rem 0;
+}
+.header-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.7rem 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+.primary-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 16px 40px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 3rem;
+    border: none;
+}
+#diff-btn{
+    background-color: black;
+    border: 1px solid white;
+    margin-left: 14px;
+}
+.header-img{
+    display: flex;
+}
+.video-btn{
+    background-color: rgba(48, 48, 48, 0.54);
+    /* background-color: rgb(48, 48, 0.54); */
+    margin-left:-480px;
+    margin-top: 500px;
+    margin-bottom: 100px;
+    padding: 22px;
+    text-align: justify;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+.color-div{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+#video-num{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#video-tuto{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.videos{
+    background-color: red;
+    margin-left: -100px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    padding: 22px;
+    border-radius: 12px;
+}
+.videos h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+}
+.videos span{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.bg-color{
+    background-color: rgba(48, 48, 48, 0.54);
+}
+
+
+/* Mobile media Responsive codes ... */
+
+@media screen and (max-width:576px) {
+
+    .nav-menu{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+    }
+    .header-banner{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .header-text p{
+        width: 80%;
+    }
+    .header-title{
+        width: 18rem;
+        font-size: 2.25rem;
+    }
+    .header-btn{
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .primary-btn{
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+    .videos{
+        margin-left: -150px;
+        margin-top: 100px;
+        margin-bottom: 700px;
+        padding: 10px;
+    }
+    .videos span{
+        font-size: 0.6rem;
+    }
+    .video-btn{
+        margin-left: -300px;
+        margin-top: 300px;
+        padding: 3px;
+        gap: 5px;
+    }
+}
